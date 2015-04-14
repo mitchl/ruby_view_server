@@ -9,3 +9,19 @@
   <%= @name %>
 </p>
 
+<p>
+    <ul>
+      <% ['apples', 'oranges', 'bananas'].each do |fruit| %>
+        <li>I like to eat <%= fruit %></li>
+      <% end %>
+    </ul>
+      <%
+        def link_to(name, url)
+            return "<a href='#{url}'>#{name}</a>"
+         end
+        %>
+</p>
+
+<footer>
+    <%= link_to('This is a link to google', 'http://google.com') %>
+</footer>
